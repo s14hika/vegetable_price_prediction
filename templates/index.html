@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Price Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Vegetable Price Prediction</h2>
+        <form action="/predict" method="post" class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Vegetable" class="form-label">Vegetable</label>
+                    <input type="text" class="form-control" name="Vegetable" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Season" class="form-label">Season</label>
+                    <input type="text" class="form-control" name="Season" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="Month" class="form-label">Month</label>
+                    <input type="text" class="form-control" name="Month" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Temp" class="form-label">Temperature</label>
+                    <input type="text" class="form-control" name="Temp" required>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-primary">Predict Price</button>
+            </div>
+        </form>
+        <h3 class="text-center mt-4 text-success">{{ prediction_text }}</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
