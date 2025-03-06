@@ -32,7 +32,7 @@ vegetable_price_prediction/
 ## Installation & Setup
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/s14hika/vegetable-price-prediction.git
+   git clone https://github.com/vegetable-price-prediction.git
    cd vegetable-price-prediction
    ```
 
